@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 8080
 
 spring:
   datasource:
@@ -14,10 +14,3 @@ mybatis:
   mapper-locations:
     - classpath:dao/*.xml
     - classpath*:/mapper/**/*.xml
-
-# \u81EA\u5B9A\u4E49jwt key
-jwt:
-  tokenHeader: Authorization #JWT\u5B58\u50A8\u7684\u8BF7\u6C42\u5934
-  secret: mySecret #JWT\u52A0\u89E3\u5BC6\u4F7F\u7528\u7684\u5BC6\u94A5
-  expiration: 604800 #JWT\u7684\u8D85\u671F\u9650\u65F6\u95F4(60*60*24)
-  tokenHead: Bearer  #JWT\u8D1F\u8F7D\u4E2D\u62FF\u5230\u5F00\u5934
