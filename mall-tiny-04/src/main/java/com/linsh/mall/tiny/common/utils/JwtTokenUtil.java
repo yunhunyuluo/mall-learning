@@ -1,11 +1,5 @@
 package com.linsh.mall.tiny.common.utils;
 
-/**
- * @author linsh
- * @description
- * @since 2023-12-24
- */
-
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -20,7 +14,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * JwtToken生成的工具类
+ * @author linsh
+ * @description JwtToken生成的工具类
+ * @since 2024-01-13
+ *
  * JWT token的格式：header.payload.signature
  * header的格式（算法、token的类型）：
  * {"alg": "HS512","typ": "JWT"}
@@ -41,7 +38,7 @@ public class JwtTokenUtil {
     private Long expiration;
 
     /**
-     * 根据负责生成JWT的token
+     * 根据负载生成JWT的token
      */
     private String generateToken(Map<String, Object> claims) {
         return Jwts.builder()
