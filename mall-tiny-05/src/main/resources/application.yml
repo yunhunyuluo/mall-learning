@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 8080
 
 spring:
   datasource:
@@ -7,7 +7,7 @@ spring:
     username: root
     password: 123456
   mvc:
-    pathmatch:
+    path match:
       matching-strategy: ANT_PATH_MATCHER
   redis:
     host: localhost # Redis服务器地址
@@ -30,6 +30,7 @@ spring:
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml
+#    - classpath*:com/**/mapper/*.xml
     - classpath*:/mapper/**/*.xml
 
 # 自定义redis key
