@@ -27,6 +27,7 @@
         <module>mall-tiny-05</module>
         <module>mall-tiny-06</module>
         <module>mall-tiny-06</module>
+        <module>mall-tiny-rabbit</module>
     </modules>
 
     <properties>
