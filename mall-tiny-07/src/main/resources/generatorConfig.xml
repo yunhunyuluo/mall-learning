@@ -36,13 +36,13 @@
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
         <!-- 用于控制实体类的生成 -->
-        <javaModelGenerator targetPackage="com.linsh.mall.tiny.mbg.model" targetProject="mall-tiny-03\src\main\java"/>
+        <javaModelGenerator targetPackage="com.linsh.mall.tiny.mbg.model" targetProject="mall-tiny-07\src\main\java"/>
         <!-- 用于控制Mapper.xml文件的生成 -->
-<!--        <sqlMapGenerator targetPackage="com.linsh.mall.tiny.mbg.mapper" targetProject="mall-tiny-03\src\main\resources"/>-->
-        <sqlMapGenerator targetPackage="mapper" targetProject="mall-tiny-03\src\main\resources"/>
+<!--        <sqlMapGenerator targetPackage="com.linsh.mall.tiny.mbg.mapper" targetProject="mall-tiny-07\src\main\resources"/>-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="mall-tiny-07\src\main\resources"/>
         <!-- 用于控制Mapper接口的生成 -->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.linsh.mall.tiny.mbg.mapper"
-                             targetProject="mall-tiny-03\src\main\java"/>
+                             targetProject="mall-tiny-07\src\main\java"/>
         <!--生成全部表tableName设为%-->
         <table tableName="pms_brand">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
